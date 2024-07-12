@@ -25,7 +25,7 @@
     no data
   steps: 
     - Нажимаем кнопку "Sing in with Discord"
-  exprected-result: |
+  expected-result: |
     Пользовалеть должен попасть на главную страницу
     Пользователь видит надпись "Successfully authenticated"
 
@@ -39,12 +39,51 @@
     Логин = AlexTestTest@gmail.com, Пароль = 12345qwer
   steps:
     - Нажимаем кнопку "Sing in with GitHub"
-  exprected-result: |
+  expected-result: |
     Пользовалеть должен попасть на главную страницу
     Пользователь видит надпись "Successfully authenticated"
 
 - summary: |
     Пользователь имеет возможность сыграть в игру без регистрации
+  requirement: |
+    При нажати на кнопку "Try simple battle" должна начаться игра с ботом
+  prerequisites: |
+    Открыта главная страница проекта
+    Пользователь НЕ должен быть авторизован
+  test-data: |
+    no data
+  steps: 
+    - Нажимаем на кнопку "Try simple battle"
+  expected-result: |
+    Начинается рандомная игра с ботом
+
+- summary: |
+    Проверка наличия мобильной версии сайта
+  requirement: |
+    С помощью DevTools проверить несколько популярных мобильных устройств
+  prerequisites: |
+    Открыт инструмент разработчика DevTools
+  test-data: |
+    no data
+  steps:
+    - В интрументе разработчика выбираем toggle divice toolbar
+    - Выбираем по списку предложенные нам модели телефона
+  expected-result: |
+    Сайт долженн корректно отображаться на всех популярных моделях телефона
+
+- summary: |
+    
+  requirement: |
+    2
+  prerequisites: |
+    3
+    4
+  test-data: |
+    5
+  steps:
+    - 6
+  expected-result: |
+    7
 
 
 
