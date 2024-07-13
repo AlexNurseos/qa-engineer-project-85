@@ -20,7 +20,7 @@
   prerequisites: |
     Открыта страница авторизации пользователя
     Пользователь авторизованн в Discord
-  Test-data: |
+  test-data: |
     no data
   steps: 
     - Нажимаем кнопку "Sing in with Discord"
