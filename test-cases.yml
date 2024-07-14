@@ -202,7 +202,7 @@
     game type = with a bot
     time control = 8 min
     Choose task by name or tags = rect_area
-  steps
+  steps:
     - Выбираем язык NodeJS
     - Меня строчку "return 0" на "return width * length"
     - Нажимаем кнопку "Run"
